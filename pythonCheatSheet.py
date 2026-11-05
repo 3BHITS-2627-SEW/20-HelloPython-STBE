@@ -53,5 +53,18 @@ print("Zahl eingelesen vom Typ",type(eingeleseneZahl))
 def main():
     print("Hallo Main!")
 
-
+#Funktionsaufruf
 main()
+
+#main2()
+
+def main2():
+    print("HelloFunction2!")
+
+# starte nur dann eine Funktion, 
+# wenn das Programm als Hauptprogramm gestartet wurde
+
+# -> pruefe spezial-Variable
+if __name__ == "__main__":
+    # das Programm wurde als Hauptprogramm gestartet
+    main2()

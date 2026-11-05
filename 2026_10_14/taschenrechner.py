@@ -8,4 +8,3 @@ if modulo == 1:
     print("Ergebnis ist ungerade")
 if modulo == 0:
     print("Ergebnis ist gerade")
-
