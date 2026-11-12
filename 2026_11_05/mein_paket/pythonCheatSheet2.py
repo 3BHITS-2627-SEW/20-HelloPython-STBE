@@ -14,7 +14,7 @@ from numpy import number as npynb
 from numpy import *
 
 # eigene Bibliotheken bzw. Pakete importieren
-from mein_paket.meineKlasse import *
+from meineKlasse import *
 
 def main():
     number = numpy.sqrt(4)
@@ -29,7 +29,14 @@ def main():
     # Verwende die eigene Klasse:
     #MeineKlasse
     meinObjekt = MeineKlasse()
-    print("Name vom Objekt:",meinObjekt.name)
+    print("Name vom Objekt:","PRIVATE") # IST PRIVATE: meinObjekt.__name
+    # nun: Zugriff auf die Methode
+    print("Welcher Monat ist aktuell?", meinObjekt.noNoneNovember())
+    # greife auf den getter zu
+    print("Der Name vom Objekt VIA Getter:",meinObjekt.get_name())
+    # Testen den Setter:
+    meinObjekt.set_name("meinObjekt")
+    print("Namen nach Aenderung:",meinObjekt.get_name())
     pass
 
 
